@@ -36,6 +36,6 @@ function rotateSpecials() {
         } else if (finalDate == "Saturday") {
                document.getElementById("special-img-txt").innerHTML = pizzas[6];
                document.getElementById("special").innerHTML = specialText + pizzas[6];
-               $("#special-img").attr("src", "imgs/small.png");
+               $("#special-img").attr("src", "imgs/small.jpg");
         }
 }
