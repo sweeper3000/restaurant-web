@@ -7,7 +7,6 @@ function rotateSpecials() {
 	var finalDate = days[date.getDate()];
 
 	var specialText = "Today's special is ";
-	var specialItem;
 
 	if (finalDate == "Sunday") {
 		document.getElementById("special").innerHTML = specialText + pizzas[0];
