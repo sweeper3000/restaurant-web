@@ -56,3 +56,32 @@ function rotateSpecials() {
                $("#special-img").attr("src", "imgs/small.jpg");
         }
 }
+
+function checkLogin() {
+	// password is demo
+	var username = "demo";
+	var password = "2a97516c354b68848cdbd8f54a226a0a55b21ed138e207ad6c5cbb9c00aa5aea";
+
+
+	var un = document.getElementById("username").value;
+	var pw = document.getElementById("password").value;
+	var valid = false;
+
+	var pwHash = sha256_digest(pw);
+
+	if (un == username) {
+		if (pwHash == password) {
+			valid = true;
+		}
+	}
+
+	if (valid) {
+		window.location = "https://google.ca";
+		console.log("logged in");
+		return false;
+	} else {
+		var errorMsg = "Incorrect username/password";
+		document.getElementById("error").innerHTML = errorMsg;
+		$("#password").val("");
+	}
+}

@@ -4,3 +4,7 @@
 #side-nav-header {
 	margin-left: 1%;
 }
+
+#error {
+	color: red;
+}
