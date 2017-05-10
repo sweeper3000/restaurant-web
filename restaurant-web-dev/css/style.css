@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#side-nav-header {
+	margin-left: 1%;
+}
+
+#error {
+	color: red;
+}
+
+#sign-out {
+	position: fixed;
+	bottom: 0;	
+}
