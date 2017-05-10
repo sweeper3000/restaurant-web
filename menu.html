@@ -11,19 +11,6 @@
 <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-	<script>
-		var width = $(window).width();
-
-		if (width >= 993) {
-			$("#container").removeClass("container");
-		}
-			
-		$(window).resize(function(){
-			if (width <= 993) {
-				$("#container").removeClass("container");
-			}
-		});
-	</script>
         <nav>
         <div class="nav-wrapper light-blue darken-2">
                 <span class="brand-logo center">Restaurant</span>
@@ -41,7 +28,7 @@
         </div>
     </nav>
 	<h4 class="center">Pizzas</h4>
-	<div class="container" id="container">
+	<div class="container">
 		<div class="row">
 			<div class="col s12 m6 l3">
 				<div class="card medium">
