@@ -8,3 +8,8 @@
 #error {
 	color: red;
 }
+
+#sign-out {
+	position: fixed;
+	bottom: 0;	
+}
