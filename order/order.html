@@ -27,6 +27,41 @@
         </div>
     </nav>
     
+    <div class="container">
+    	<div class="row">
+        	<div class="col s12">
+            	<div class="card">
+                	<div class="card-content">
+                    	<div class="row">
+                        	<h4 class="center">Order</h4>
+                        	<form class="col s12">
+                            	<div class="input-field col s12 m6">
+                                	<select>
+                                    	<option value="" disabled selected>Pizza</option>
+                                        <option value="1">Pepperoni</option>
+                                        <option value="2">Vegetarian</option>
+                                        <option value="3">Meat Lover's</option>
+                                    </select>
+                                </div>
+                                <div class="input-field col s12 m6">
+                                	<select>
+                                    	<option value="" disabled selected>Drink</option>
+                                        <option value="1">Water</option>
+                                        <option value="2">Pepsi</option>
+                                        <option value="3">Dr Pepper</option>
+                                        <option value="4">Crush</option>
+                                        <option value="5">Brisk</option>
+                                        <option value="6">7 Up</option>
+                                    </select>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 	<footer class="page-footer light-blue darken-2">
                 <div class="container">
                         <div class="row">
@@ -49,6 +84,7 @@
         <script>
 			$(document).ready(function(){
 				$(".button-collapse").sideNav();
+				$("select").material_select();
 			});
 		</script>
  
