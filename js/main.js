@@ -56,39 +56,4 @@ function rotateSpecials() {
                $("#special-img").attr("src", "imgs/small.jpg");
         }
 }
-
-var usernames = ["demo", "demo1"];
-var passwords = ["2a97516c354b68848cdbd8f54a226a0a55b21ed138e207ad6c5cbb9c00aa5aea", "61ea51136a1eb39db39c889c9c53ebd21e5ce9e78721a6c2c40f8e16b782a879"];
-
-function checkLogin() {
-	/* USERNAMES, PASSWORDS
-		demo, demo
-		demo1, demo2
-	*/
-	
-	var totalUsers = usernames.length;
-	var un = document.getElementById("username").value;
-	var pw = document.getElementById("password").value;
-	var valid = false;
-
-	var pwHash = sha256_digest(pw);
-
-	for (i = 0; i < totalUsers; i++) {
-		if (un == usernames[i]) {
-			if (pwHash == passwords[i]) {
-				valid = true;
-				break;
-			}
-		}
-	}
-
-	if (valid) {
-		console.log("Login successful!");
-		window.location = "order.html?user="+un;
-		return false;
-	} else {
-		console.log("Login failed!");
-		Materialize.toast("Incorrect username/password", 4000);
-		$("#password").val('');
-	}
 }
