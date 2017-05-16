@@ -56,4 +56,3 @@ function rotateSpecials() {
                $("#special-img").attr("src", "imgs/small.jpg");
         }
 }
-}
