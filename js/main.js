@@ -84,7 +84,7 @@ function checkLogin() {
 
 	if (valid) {
 		console.log("Login successful!");
-		window.location = "order.html?user="+un;
+		window.location = "order.html";
 		return false;
 	} else {
 		console.log("Login failed!");
