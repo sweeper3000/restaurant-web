@@ -35,8 +35,8 @@
 	    	<div class="col s12 m12 l12">
 			<div class="card large">
 		    	<div class="card-image">
-		        	<img id="special-img">
-		            <span class="card-title" id="special-img-txt"></span>
+				<img class="materialboxed" id="special-img">
+		                <span class="card-title" id="special-img-txt"></span>
 		        </div>
 		    	<div class="card-content">
 		        	<h5>Special of the Day</h2>
@@ -71,8 +71,9 @@
     
     <script>
 		$(document).ready(function(){
-			 $(".button-collapse").sideNav();
-			 rotateSpecials();
+			$(".button-collapse").sideNav();
+			rotateSpecials();
+			$(".materialboxed").materialbox();
 		});
 	</script>
 </body>
