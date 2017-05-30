@@ -8,5 +8,11 @@ function rotateSpecials() {
 		
 		$("#special-img").attr("src", imgs[currentDate]);
 		document.getElementById("special-img-txt").innerHTML = pizzas[currentDate];
-		document.getElementById("special").innerHTML = specialText + pizzas[currentDate];	
+		document.getElementById("special").innerHTML = specialText + pizzas[currentDate];
+
+		// change text colour based on image colour
+
+		if (currentDate == 3 || currentDate == 4) {
+			$("#special-img-txt").addClass("black-text");
+		}	
 }
