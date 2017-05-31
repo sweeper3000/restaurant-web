@@ -73,6 +73,10 @@
 					<input name="credit-card" class="validate" type="number" id="credit-card" maxlength="999999999999999" min="1000000000000000" required>
 					<label for="credit-card" data-error="Must be 16 digits!">Credit Card Number</label>
 				</div>
+                <div class="input-field col s12 m6">
+                	<input name="ccv" class="validate" type="number" id="ccv" min="3" required>
+                    <label for="ccv" data-error="Invalid CCV">CCV</label>
+                </div>
 				<div class="input-field col s12">
 					<button id="orderSubmit" class="waves-effect waves-light btn light-blue darken-2" onclick="takeOrder()">Submit<i class="material-icons left">send</i></button>
 				</div>
