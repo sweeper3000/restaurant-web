@@ -16,3 +16,8 @@ function rotateSpecials() {
 			$("#special-img-txt").addClass("black-text");
 		}	
 }
+
+function takeOrder() {
+	Materialize.toast('Order Taken. Thanks!', 4000);
+	console.log("order taken");	
+}
