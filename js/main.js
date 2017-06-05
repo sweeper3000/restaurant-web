@@ -18,6 +18,11 @@ function rotateSpecials() {
 }
 
 function takeOrder() {
-	Materialize.toast('Order Taken. Thanks!', 4000);
-	console.log("order taken");	
+    var inputs = ["#name", "#pizza", "#drink", "#address", #credit-card", "#ccv"];
+
+Materialize.toast("Order taken, thanks!", 4000);
+
+    for (i = 0; i <= inputs.length; i++) {
+        $(inputs[i]).val("");
+    }
 }
