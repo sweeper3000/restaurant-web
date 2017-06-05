@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#side-nav-header {
+	margin-left: 1%;
+}
+
+#error {
+	color: red;
+}
+
+#sign-out {
+	position: fixed;
+	bottom: 0;	
+}
+
+body {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+}
+
+main {
+	flex: 1 0 auto;
+}
